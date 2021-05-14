@@ -1,0 +1,190 @@
+{
+	"info": {
+		"_postman_id": "5bf8a3f6-a240-4907-991c-e73d23b1d5d8",
+		"name": "tz",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "client/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "phone",
+							"value": "380983505050",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://192.168.10.10/api/client/login",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"10",
+						"10"
+					],
+					"path": [
+						"api",
+						"client",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "client/code",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "code",
+							"value": "42449",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://192.168.10.10/api/client/code",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"10",
+						"10"
+					],
+					"path": [
+						"api",
+						"client",
+						"code"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "client/logout",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiZTI2NjhlYmQ4ODZkMmY3MWI0OTJjYzM1NGViYTVmYzYxMWRiY2MyOWM3ZjQxODIyYjkwZTgwMzQ5MTgxMjZiN2FjYjg2N2JhM2VjNDRlZjQiLCJpYXQiOjE2MjEwMDYzNTEuNjkyMTAxLCJuYmYiOjE2MjEwMDYzNTEuNjkyMTA0LCJleHAiOjE2NTI1NDIzNTEuNjg4ODA3LCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.Nu2yi43W6XXEcy7_eWePYZ2jDsMtoQ0Rn34_FXxbwBquwXjr2ZAcuyr2WuLw9sA0SB8BL6NHaUQXJ1SkyJxpXLvBlclZyD7WtjrFPte9eU9wroOAfLFdF2ofKwogDGphRWelbpth5mnlsOe_5tvky55mWmU0_OhKeYCqgJHUzb9FOXU4u9F485hOifooM3TFK2wpngtuMVlEmjWG-NGgM-KHNY09v9z75BvKgAxuUVyrjAS3IJpw0TMXIPV0TVZ6h8kOZsct7LO-_q7aa4C1LAptIivHD5U8GFERr80fRIG0edqJhBYpSOCtVJSnUs4cIMkRAM3sHzsYU_de6POg6zrajEyQnFTN8UJxMTiGKjhOHHsLwkqPm6QbMsBivkMGMzALMLUYeLEoSKBjV32MJT9gc8kE-Uqu8kBp0cVbYF_QSo8mCjGTEN34N-IkSau6t2aLE0zp8mm6zDxNN6G_jsecmRabgu7UXsrE-V1GejxTLbIoR7LfMj9QIn0nVtKQGsS4t3yxrmn2JpJgDxDysJg8gEy_5M3eXpY-f9ETbeOtrDyuA5yjRQiO9HzRKZsL60ufDLtQiBXkBvYY7W-0zKv02SdYQeGWpOIN6Os8--gzzoMegE6agVC-pVGSiiOL9B7iP37kDn7kH2tw3Wls7-1Xvz0ziWD81_RBpzi4BKE",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://192.168.10.10/api/client/logout",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"10",
+						"10"
+					],
+					"path": [
+						"api",
+						"client",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "yaroshjeka@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://192.168.10.10/api/user/login",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"10",
+						"10"
+					],
+					"path": [
+						"api",
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user/logout",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiYjc1NWZmMTVhYmRiOGY5YmFiMTE1NWI4ZmIzYTVhYWQ0MDVhOTI0ODVhM2Y3N2E0ZDIxYWY0NzVhNTRmMWE2NDFiODg0NjgzMjNlOTYzNGEiLCJpYXQiOjE2MjEwMDcxNjkuODQ3MDQ1LCJuYmYiOjE2MjEwMDcxNjkuODQ3MDQ4LCJleHAiOjE2NTI1NDMxNjkuODM5OTgxLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.pCqqNTfkj29k0Jc4CURZkPA5oducdOIshHFJAnbHqjPIwDIVQCsfO3qD7rN3Lx6jDkUCxwUexR1HsR2fxZkoC3346VYed06oZ7Fk9h_qh3x_S8TsAoRyBq29iOiXjMbGrcLkh1DUzVFZSbexmcilsJO_eOkvnVTmvEfpv9_MY8T4PK_sDfn9axRebT1xBNV7RqV9KwFovdTimXsEHHGbT6izZd9tz1KsfaFEZrCraMlizYwF6jA0wpUJGAYE8_RfRxdDn-5ACUN2gHepqFJvz3P03AqLBAfQekjigQOJMxsmP358fnaDzNyfSGR4Lvftn33d9uo9eockjg5WINyIh0mBgQNkYI9B480decQ32vLr2WEQ5LRT7S_pDwzMQ5rhZwMu60sjRBWmTaGb7Hp5wUQ6kmUN7wExT7Fb28M4JvUkODg6yNW1WX91-MqXHp-b434Wvx5szZyK-rDCYKKga4a6gup8hn8MkUrMwgMVm1_Ell8d_Gk1vzUjujD-9zoiISxhVD6Rnu9stwu5LGnJIAtQvw24gexKv_zNwHU02GRFQ4qoC1z1AI5S8PhaY0ORLfvupbTmohufTXUJx81vCLP4-cLMSWxWusxW9zVkBkrC_HAl12PEvpV0h6EAYxsZlrMU0_Jvgm_zQGGC2klGWYWMx72iY7c2KksLzlvHhTE",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://192.168.10.10/api/user/logout",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"10",
+						"10"
+					],
+					"path": [
+						"api",
+						"user",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
