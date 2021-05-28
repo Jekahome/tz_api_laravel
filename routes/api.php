@@ -23,8 +23,8 @@ Route::post('client/login', [LoginClientController::class,'client']);
 
 Route::post('client/code', [LoginClientController::class,'verification_code']);
 
-Route::post('client/logout', [LogoutClientController::class,'__invoke'])->middleware('auth:api_client');
+Route::post('client/logout', [LogoutClientController::class,'logout'])->middleware('auth:api_client');
 
 Route::post('user/login', [LoginUserController::class,'user']);
 
-Route::post('user/logout', [LogoutUserController::class,'__invoke'])->middleware('auth:api_user');
+Route::post('user/logout', [LogoutUserController::class,'logout'])->middleware('auth:api_user');
